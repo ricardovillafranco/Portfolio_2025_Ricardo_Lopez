@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300&family=Roboto&family=Share+Tech&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<!-- Favicon en formato .ico -->
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+<!-- Alternativa con .png -->
+<link rel="icon" href="/path-to-your-favicon/favicon.png" type="image/png">
+
+<!-- Alternativa con .svg -->
+<link rel="icon" href="/path-to-your-favicon/favicon.svg" type="image/svg+xml">
+
+</head>
+
+<body id="body">
+
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">
+            <img class="navbar-logo-RL logo-item" src="./img/new-logo.jpeg" alt="Ricardo Lopez logo">
+        </div>
+    
+        <!-- Menú de navegación en escritorio -->
+        <ul class="navbar-list">
+            <li><a class="navbar-item" href="#about-me">About Me</a></li>
+            <li><a class="navbar-item" href="#projects">Projects</a></li>
+            <li><a class="navbar-item" href="#courses">Courses</a></li>
+            <li><a class="navbar-item" href="#resume">Resume</a></li>
+            <li><a class="navbar-item" href="#contact">Contact</a></li>
+        </ul>
+    
+        <!-- Icono de hamburguesa para móviles -->
+        <i class="fa-solid fa-bars" id="hamburguer" aria-label="Toggle menu"></i>
+    
+        <!-- Menú desplegable (hamburguesa) -->
+        <ul class="menu" id="menu">
+            <li><a class="menu-item" href="#about-me">About Me</a></li>
+            <li><a class="menu-item" href="#projects">Projects</a></li>
+            <li><a class="menu-item" href="#courses">Courses</a></li>
+            <li><a class="menu-item" href="#resume">Resume</a></li>
+            <li><a class="menu-item" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="profile-container" id="about-me">
+            <div class="profile">
+                <div class="profile-info">
+                    <div class="profile-texts">
+                        <h1 class="profile-info-name profile-text">Ricardo Lopez</h1>
+                        <h2 class="profile-info-position profile-text">Frontend Developer</h2>
+        
+                        <div class="profile-info-description">
+                            <p class="profile-info-description">Frontend developer with experience working with
+                                JavaScript, React, HTML, CSS, Tailwind, Wordpress, Elementor, Premium Addons, etc.</p>
+                            <p class="profile-info-description">Really enjoy programming, have an insatiable curiosity to
+                                learn new things. I truly love solving problems using technology, and I have an incredible concentration capacity that feels like a superpower.</p>
+                        </div>
+        
+                        <div class="contact-icons-container">
+                            <ul class="contact-icons-list">
+                                <li>
+                                    <a class="contact-icon" href="mailto:ricardo.t.villafranco@gmail.com" target="_blank" aria-label="Send email to Ricardo Lopez">
+                                        <img class="linkedin-icon img-icon" src="./img/Gmail Logo.jpeg" alt="Gmail Logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contact-icon" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/" target="_blank" aria-label="Visit Ricardo Lopez LinkedIn">
+                                        <img class="linkedin-icon img-icon" src="./img/linkedIn.PNG" alt="LinkedIn Logo">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contact-icon" href="https://github.com/ricardovillafranco" target="_blank" aria-label="Visit Ricardo Lopez GitHub">
+                                        <i class="fa-brands fa-github img-icon"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="contact-icon" href="whatsapp://send?phone=+525564410491&text=Hola,%20te%20env%C3%ADo%20un%20mensaje%20desde%20mi%20sitio%20web" target="_blank" aria-label="Send WhatsApp message to Ricardo Lopez">
+                                        <img class="img-icon whatsapp-icon" src="./img/whatsapp-icon.jpeg" alt="WhatsApp Logo">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <picture class="profile-picture-container">
+                    <div class="img-container">
+                        <img class="profile-pic" src="./img/profile_photo_v6.png" alt="Profile picture of Ricardo Lopez">
+                    </div>
+                </picture>
+            </div>
+        
+            <div class="profile-icons">
+                <ul class="profile-icons-list">
+                    <li><div class="profile-icon-container"><img class="profile-icons-js profile-icons-item" src="./img/javascript.svg" alt="JavaScript Icon"> JavaScript</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-react profile-icons-item" src="./img/react.png" alt="React Icon"> React</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-css profile-icons-item" src="./img/css3.png" alt="CSS Icon"> CSS</div></li>
+                    
+                    <li><div class="profile-icon-container"><img class="profile-icons-html profile-icons-item" src="./img/html.png" alt="HTML Icon"> HTML</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-wordpress profile-icons-item" src="./img/wordpress-logo.png" alt="WordPress Icon"> WordPress</div></li>
+
+                    <li><div class="profile-icon-container"><img class="profile-icons-tailwind profile-icons-item" src="./img/tailwind-icon.PNG" alt="Tailwind Icon"> Tailwind</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-elementor profile-icons-item" src="./img/elementor-logo.png" alt="Elementor Icon"> Elementor</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-crocoblock profile-icons-item" src="./img/crocoblock-logo.webp" alt="Crocoblock Icon"> Crocoblock</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-acf profile-icons-item" src="./img/acf-logo.png" alt="Advanced Custom Fields Icon"> Advanced Custom Fields</div></li>
+                    <li><div class="profile-icon-container"><img class="profile-icons-premium-addons profile-icons-item" src="./img/Premium addons-logo.png" alt="Premium Addons Icon"> Premium Addons</div></li>
+                </ul>
+            </div>
+        </section>
+        
+
+
+        <section class="projects" id="projects">
+            <h3 class="section-title" id="title-projects">Experience</h3>
+            <div class="projects-container">
+                <div class="project-container">
+
+                    <a href="https://vrimconnect.com/home/" class="project">
+                        <h4 class="project-title"> Vrim Connect</h4> <img class="project-window"
+                            src="./img/VRIM_Connect.png" frameborder="0"></img>
+                    </a>
+                    <span class="project-description">
+                        Dynamic website with WordPress, Elementor, Astra theme. Followed design mockups, enhanced with ACF plugin. Dedication to design and usability. </span>
+                    <div class="project-icons">
+                        <div class="project-icon-container"><img class="profile-icons-js profile-icons-item"
+                                src="./img/wordpress-logo.png" alt="Wordpress Icon"></div>
+
+                        <div class="project-icon-container"><img class="profile-icons-css profile-icons-item"
+                                src="./img/elementor-logo.png" alt="Elementor Icon"></div>
+                        <div class="project-icon-container"><img class="profile-icons-html profile-icons-item"
+                                src="./img/Premium addons-logo.png" alt="Premium addons Icon"></div>
+                        <div class="project-icon-container"><img class="profile-icons-tailwind profile-icons-item"
+                                src="./img/acf-logo.png" alt="ACF Icon"></div>
+
+
+                    </div>
+                </div>
+                <div class="project-container">
+
+                    <a href="https://koicbd.com.mx/tienda/" class="project">
+                        <h4 class="project-title"> Koi ecommerce</h4> <img class="project-window"
+                            src="./img/Koi_page.png" frameborder="0"></img>
+                    </a>
+                    <span class="project-description">Built a sleek e-commerce site with Elementor Pro, WooCommerce, and ACF for a seamless shopping experience.
+                    </span>
+                    <div class="project-icons">
+                        <div class="project-icon-container"><img class="profile-icons-js profile-icons-item"
+                                src="./img/wordpress-logo.png" alt="Wordpress Icon"></div>
+
+                        <div class="project-icon-container"><img class="profile-icons-css profile-icons-item"
+                                src="./img/elementor-logo.png" alt="Elementor Icon"></div>
+                        <div class="project-icon-container"><img class="profile-icons-html profile-icons-item"
+                                src="./img/crocoblock-logo.webp" alt="Crocoblock Icon"></div>
+                        <div class="project-icon-container"><img class="profile-icons-tailwind profile-icons-item"
+                                src="./img/acf-logo.png" alt="ACF Icon"></div>
+
+
+                    </div>
+                </div>
+                <div class="project-container">
+                    <a href="https://ricardovillafranco.github.io/pokemon-game/" class="project">
+                        <h4 class="project-title"> Pokemon Game</h4> <img class="project-window"
+                            src="./img/Pokemon_page.png" frameborder="0"></img>
+                    </a>
+                    <span class="project-description">
+                        Developed a Pokémon battle game using HTML, CSS, and JavaScript with unique abilities and effects.
+                    </span>
+                    <div class="project-icons">
+                        <div class="project-icon-container"><img class="profile-icons-js profile-icons-item"
+                                src="./img/javascript.svg" alt="JavaScript Icon"></div>
+
+                        <div class="project-icon-container"><img class="profile-icons-css profile-icons-item"
+                                src="./img/css3.png" alt="CSS Icon"></div>
+                        <div class="project-icon-container"><img class="profile-icons-html profile-icons-item"
+                                src="./img/html.png" alt="html5 Icon"></div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+        </section>
+
+        <section class="courses" id="courses">
+            <h3 class="section-title">Platzi Courses</h3>
+
+            <div class="courses-container">
+                <button aria-label="Back" class="carousel-back">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="courses-carousel">
+
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2484-react-practico/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/platzi-react.PNG"></img>
+                            <p class="img-title">React.JS</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/1557-git-github/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/platzi-github.PNG"></img>
+                            <p class="img-title">Git y Github</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2327-javascript-practico-2021/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/platzi-JS-practico.PNG"></img>
+                            <p class="img-title">JavaScript</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2332-javascript-poo/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/POO.PNG"></img>
+                            <p class="img-title">Programación Orientada a Objetos</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/3175-asincronismo-js/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/asincronismo-JS.PNG"></img>
+                            <p class="img-title">Asincronismo</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/3504-ecmascript-6/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/ecmascript.PNG"></img>
+                            <p class="img-title">EcmaScript</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2008-html-css/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/html-css.PNG"></img>
+                            <p class="img-title">HTML y CSS</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2467-frontend-developer/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/frontend-developer.PNG"></img>
+                            <p class="img-title">Frontend Developer</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2461-arrays/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/arrays.PNG"></img>
+                            <p class="img-title">Arrays</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/1822-tailwind-css-2020/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/tailwind-css.PNG"></img>
+                            <p class="img-title">Tailwind CSS</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/2477-frontend-developer-practico/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/frontend-developer-practico.PNG"></img>
+                            <p class="img-title">Práctico de Frontend Developer</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/1098-ingenieria/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/fundamentos-ingenieria.PNG"></img>
+                            <p class="img-title">Fundamentos de Ingeniería</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/1474-oop/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/oop.PNG"></img>
+                            <p class="img-title">Programación Orientada a Objetos</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://platzi.com/p/ricardo.t.villafranco/curso/3578-npm/diploma/detalle/"
+                            class="course" target="_blank"><img class="course-img" src="./img/npm-gestion.PNG"></img>
+                            <p class="img-title">NPM: Gestión de Paquetes y Dependencias </p>
+                        </a></picture>
+
+                </div>
+                <button aria-label="Next" class="carousel-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div role="tablist" class="carousel-indicators"></div>
+            </div>
+        </section>
+
+        <section class="courses">
+            <h3 class="section-title"> Oracle One Courses</h3>
+
+            <div class="courses-container">
+                <button aria-label="Back" class="carousel-back-2">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <div class="courses-carousel-oracle">
+
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/git-github-control-version"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/oracleone-gitygithub.PNG"></img>
+                            <p class="img-title">Git y Github</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/layouts-responsivos-layouts-mobile"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/layouts-resposivos.PNG"></img>
+                            <p class="img-title">Layouts Responsivos</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/flexbox-posicione-elementos-pantalla"
+                            class="course" target="_blank"><img class="course-img" src="./img/flexbox.PNG"></img>
+                            <p class="img-title">Flexbox</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/html5-css3-primera-pagina-web"
+                            class="course" target="_blank"><img class="course-img" src="./img/html-css-1.PNG"></img>
+                            <p class="img-title">HTML y CSS: Parte 1</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/html5-css3-posicionamiento-listas-navegacion"
+                            class="course" target="_blank"><img class="course-img" src="./img/html-css-2.PNG"></img>
+                            <p class="img-title">HTML y CSS: Parte 2</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/html5-css3-formularios-tablas"
+                            class="course" target="_blank"><img class="course-img" src="./img/html-css-3.PNG"></img>
+                            <p class="img-title">HTML y CSS: Parte 3</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/html5-css3-avanzando-css"
+                            class="course" target="_blank"><img class="course-img" src="./img/html-css-4.PNG"></img>
+                            <p class="img-title">HTML y CSS: Parte 4</p>
+                        </a></picture>
+                    <picture class="carousel-elemento"><a
+                            href="https://app.aluracursos.com/certificate/ricardo-t-villafranco/logica-de-programacion-juegos-animaciones"
+                            class="course" target="_blank"><img class="course-img"
+                                src="./img/juego-animaciones.PNG"></img>
+                            <p class="img-title">Juegos y Animaciones</p>
+                        </a></picture>
+
+                </div>
+                <button aria-label="Next" class="carousel-next-2">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div role="tablist" class="carousel-indicators-2"></div>
+            </div>
+        </section>
+    </main>
+    <section class="resume-section" id="resume">
+        <h3 class="section-title">Resume</h3>
+        <div class="resume-container">
+            <div class="preview">
+                <img class="resume-img" src="./img/resume_2025_img.png" alt="">
+                <div class="preview-overlay">
+                    <a href="./img/resume_2025.pdf" class="btn-download" download="Resume"
+                        title="Download Resume">
+                        <i class="fa-solid fa-circle-down"></i>
+                        <span class="download-btn-text">Download</span>
+                    </a>
+                </div>
+            </div>
+            <p class="phone"><a href="tel:+5564410491"><span class="call-me"><i
+                            class="fa-solid fa-phone"></i></span>+5564410491</a></p>
+        </div>
+
+    </section>
+
+    <footer class="footer" id="contact">
+
+
+        <div class="contact-icons-container-footer">
+            <a class="contact-icon" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/">
+                <img class="linkedin-icon img-icon" src="./img/Gmail Logo.jpeg" alt="">
+            </a>
+            <a class="contact-icon" href="https://www.linkedin.com/in/ricardo-thomas-l%C3%B3pez-mart%C3%ADnez/">
+                <img class="linkedin-icon img-icon" src="./img/linkedIn.PNG" alt="">
+            </a>
+
+            <a class="contact-icon" href="https://github.com/ricardovillafranco">
+                <i class="fa-brands fa-github img-icon"></i>
+            </a>
+
+
+            <a class="contact-icon" href="whatsapp://send?phone=+525564410491&text=Hola,%20te%20envío%20un%20mensaje%20desde%20mi%20sitio%20web" target="_blank" target="_blank" >
+
+                <img class="img-icon whatsapp-icon"  src="./img/whatsapp-icon.jpeg" alt="Web Icon">
+            </a>
+
+
+
+        </div>
+        <div>
+            <div class="footer-autor"> Powered By Ricardo Thomas López Martínez </div>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://kit.fontawesome.com/cc6c784dc6.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

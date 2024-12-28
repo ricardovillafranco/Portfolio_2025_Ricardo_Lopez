@@ -1,0 +1,24 @@
+{
+  "name": "portfolio_2025_ricardo_lopez",
+  "version": "1.0.0",
+  "description": "Updated portfolio for 2025 showcasing my web development skills, projects, and experience. Built with modern web technologies for a responsive and interactive user experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardovillafranco/Portfolio_2025_Ricardo_Lopez\u001b[C\u001b[D.git"
+  },
+  "keywords": [
+    "Professional",
+    "Portfolio",
+    "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[DProfessional\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardovillafranco/Portfolio_2025_Ricardo_Lopez\u001b[C\u001b[D/issues"
+  },
+  "homepage": "https://github.com/ricardovillafranco/Portfolio_2025_Ricardo_Lopez\u001b[C\u001b[D#readme"
+}
