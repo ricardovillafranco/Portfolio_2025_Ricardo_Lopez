@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Quicksand:wght@300&family=Roboto&family=Share+Tech&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Rock+Salt&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<!-- Favicon en formato .ico -->
-<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap" rel="stylesheet">
 
+    <!-- Favicon en formato .ico -->
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
 
+    <!-- Glider.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 </head>
 
 <body id="body">
@@ -352,8 +354,10 @@
         </section>
     </main>
     <section class="resume-section" id="resume">
-        <h3 class="section-title">Resume</h3>
+        
+        
         <div class="resume-container">
+            <h3 class="section-title">Resume</h3>
             <div class="preview">
                 <img class="resume-img" src="./img/resume_2025_img.png" alt="">
                 <div class="preview-overlay">
@@ -366,11 +370,53 @@
             </div>
             <p class="phone"><a href="tel:+5564410491"><span class="call-me"><i
                             class="fa-solid fa-phone"></i></span>+5564410491</a></p>
+                           
         </div>
+        
+   
+          <div class="contact-container">
+            <h2>Contáctame</h2>
+            <p>Si estás buscando un desarrollador web comprometido y con experiencia o necesitas una página web, estaré encantado de ayudarte. No dudes en enviarme un mensaje para más información.</p>
+            
+           
+            <form id="form" class="contact-form">
+                <div class="field contact-form-group">
+                    <label for="user_name">Nombre</label>
+                    <input type="text" name="user_name" id="user_name" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="field contact-form-group">
+                    <label for="user_email">Correo</label>
+                    <input type="email" name="user_email" id="user_email" placeholder="Tu correo" required>
+                </div>
+                
+                <div class="field contact-form-group">
+                    <label for="user_message">Mensaje</label>
+                    <textarea name="user_message" id="user_message" placeholder="Tu mensaje" required></textarea>
+                </div>
+                
+                <input type="submit" id="button" value="Enviar" class="contact-submit-button">
+            </form>
+            
+            <!-- Spinner de carga -->
+            <div id="spinner" class="spinner" style="display: none;"></div>
+            
+           <!-- Modal para mostrar el mensaje -->
+<div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span id="modal-close" class="modal-close">&times;</span> <!-- Botón de cierre -->
+        <h4 id="modal-message"></h4> <!-- Mensaje dinámico -->
+    </div>
+</div>
+
+            
+          </div>
 
     </section>
 
     <footer class="footer" id="contact">
+        
+          
 
 
         <div class="contact-icons-container-footer">
@@ -402,6 +448,14 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://kit.fontawesome.com/cc6c784dc6.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('k8VYM1XBPQKOBIwkr')
+  </script>
+
     <script src="app.js"></script>
 </body>
 

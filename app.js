@@ -73,3 +73,60 @@ window.addEventListener('load', function(){
     });
 });
 
+
+
+const btn = document.getElementById('button'); 
+const spinner = document.getElementById('spinner');
+const modal = document.getElementById('modal');
+const modalMessage = document.getElementById('modal-message');
+const modalClose = document.getElementById('modal-close');
+
+document.getElementById('form').addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   // Deshabilitar el botón y mostrar el spinner
+   btn.value = 'Enviando...';
+   btn.disabled = true;
+   spinner.style.display = 'block'; // Mostrar el spinner
+
+   const serviceID = 'default_service';
+   const templateID = 'template_aboykwv';
+
+   // Enviar formulario con EmailJS
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      btn.disabled = false;
+      spinner.style.display = 'none'; // Ocultar el spinner
+
+      // Mostrar el modal con mensaje de éxito
+      modalMessage.textContent = '¡Mensaje enviado exitosamente!';
+      modal.style.display = 'flex';
+    }, (err) => {
+      btn.value = 'Enviar';
+      btn.disabled = false;
+      spinner.style.display = 'none'; // Ocultar el spinner
+
+      // Mostrar el modal con mensaje de error
+      modalMessage.textContent = 'Hubo un error al enviar el mensaje. Intenta nuevamente.';
+      modal.style.display = 'flex';
+    });
+});
+
+// Cerrar el modal cuando se hace clic en la "X"
+modalClose.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Cerrar el modal cuando se hace clic fuera de la caja del modal
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+});
+
+
+
+
+
+
