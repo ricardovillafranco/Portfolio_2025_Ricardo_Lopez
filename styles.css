@@ -35,10 +35,7 @@ main {
     align-items: center; 
 
 }
-.menu-list{
-    visibility: hidden;
-    
-}
+
 
 .navbar {
     width: 100%;
@@ -60,7 +57,7 @@ main {
     transition: transform 0.5s ease, color 0.5s ease; /* Agregamos transición en el estado normal */
 }
 
-.navbar-list {
+.menu {
     width: 60vw;
     list-style: none;
     display: flex;
@@ -105,10 +102,7 @@ main {
 #hamburguer{
  display: none;
 }
-.menu {
-    display: none;
-  
-}
+
 ul{
     list-style: none;
 }
@@ -927,10 +921,8 @@ footer {
         padding: 0;
     }
 
-    .navbar-item {
-        display: none;
+    
 
-    }
 
    
     
@@ -944,6 +936,7 @@ footer {
         padding-top: 0px;
         padding-right: 0px;
         font-size: 50px;
+        z-index: 999;
        
         
 
@@ -951,39 +944,51 @@ footer {
         
         
        }    
-       .menu.open {
-        height: 300px;
-        background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 15px 0 0 15px;
-        position: absolute;
-        margin-top: 400px;
-        right: 0;
-        padding: 10px;
-        text-align: end;
-        transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition-delay: 100ms;
-        width: 100%;
-        display: flex
-;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        z-index: 99;
-        font-size: 30px;
-        line-height: 50px;
-    }
+      /* Menú cerrado (estado inicial) */
+/* Menú cerrado (estado inicial) */
+.menu {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 0 0 15px 15px;
+    position: fixed; /* Fijo en la parte superior */
+    top: 80px;
+    left: 0;
+    right: 0;
+    padding: 0 10px;
+    text-align: end;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    font-size: 30px;
+    line-height: 50px;
+    transition: max-height 600ms ease, opacity 600ms ease;
+}
+
+/* Menú abierto */
+.menu.open {
+    max-height: 500px;
+    opacity: 1;
+    padding: 10px;
+}
+
+
+
+   
                                         
-       .menu-item {
-        
-        
-        margin: 10px;
+    
+    .navbar-item {
+        margin: 20px 10px;
         line-height: 1.5em;
         color: #fff;
-        
+        font-size: 22px;
     }
 
     .navbar {
@@ -1196,10 +1201,7 @@ footer {
         padding: 0;
     }
 
-    .navbar-item {
-        display: none;
-
-    }
+    
 
    
     
@@ -1219,34 +1221,46 @@ footer {
         
         
        }
-       .menu.open {
-        height: 200px;
+    
+    .menu {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
         background-color: rgba(0, 0, 0, 0.7);
-        border-radius: 15px 0 0 15px;
-        position: absolute;
-        margin-top: 280px;
+        border-radius: 0 0 15px 15px;
+        position: fixed; /* Fijo en la parte superior */
+        top: 80px;
+        left: 0;
         right: 0;
-        padding: 10px;
+        padding: 0 10px;
         text-align: end;
-        transition: all 600ms cubic-bezier(.62,.04,.3,1.56);
-        backdrop-filter: blur(10px); /* Efecto de desenfoque */
-        -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-        border-radius: 10px; /* Bordes redondeados */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para mayor contraste */
-        transition-delay: 100ms;
-        width: 200px;
-        display: flex
-;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        z-index: 99;
+        font-size: 30px;
+        line-height: 50px;
+        transition: max-height 600ms ease, opacity 600ms ease;
     }
-       .menu-item {
+    
+    /* Menú abierto */
+    .menu.open {
+        max-height: 500px;
+        opacity: 1;
+        padding: 10px;
+    }
+       .navbar-item {
         
         
         margin: 10px;
         line-height: 1.5em;
         color: #fff;
+        font-size: 14px;
         
     }
     i#hamburguer {
