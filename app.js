@@ -85,7 +85,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
    // Deshabilitar el botón y mostrar el spinner
-   btn.value = 'Enviando...';
+   btn.value = 'Sending...';
    btn.disabled = true;
    spinner.style.display = 'block'; // Mostrar el spinner
 
@@ -95,15 +95,15 @@ document.getElementById('form').addEventListener('submit', function(event) {
    // Enviar formulario con EmailJS
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Enviar';
+      btn.value = 'Send';
       btn.disabled = false;
       spinner.style.display = 'none'; // Ocultar el spinner
 
       // Mostrar el modal con mensaje de éxito
-      modalMessage.textContent = '¡Mensaje enviado exitosamente!';
+      modalMessage.textContent = 'Message sent successfully!';
       modal.style.display = 'flex';
     }, (err) => {
-      btn.value = 'Enviar';
+      btn.value = 'Send';
       btn.disabled = false;
       spinner.style.display = 'none'; // Ocultar el spinner
 
