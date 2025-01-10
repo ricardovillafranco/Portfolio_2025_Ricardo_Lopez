@@ -125,6 +125,117 @@ window.addEventListener('click', (event) => {
   }
 });
 
+//Seccion Experience
+
+const projects = [
+  {
+    title: "Landing Page Mascotas",
+    url: "https://www.vrim.com.mx/lp-mascotas/",
+    image: "./img/landing_page_mascotas.jpg",
+    description: "Custom landing page built with WordPress and Elementor, following design mockups closely. Focused on attention to detail, design consistency, and user experience.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png"]
+  },
+  {
+    title: "Render Zero",
+    url: "https://renderzero.com/",
+    image: "./img/render_zero_project.jpg",
+    description: "High-design corporate website for a creative agency, built with HTML, CSS, and vanilla JavaScript. Features smooth animations and a modern user interface, delivering an engaging and visually striking user experience.",
+    icons: ["./img/javascript.svg", "./img/html.png", "./img/css3.png"]
+  },
+  {
+    title: "This Way",
+    url: "https://thisway.axismetrica.com/",
+    image: "./img/this_way_project_img.jpg",
+    description: "E-commerce website for a fast-food business, built with WordPress, WooCommerce, Elementor, and custom code. Includes order status tracking for customers and a management system for restaurant staff to view and update orders across three branches.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png", "./img/Premium addons-logo.png", "./img/acf-logo.png"]
+  },
+  {
+    title: "Esferas Esnaviso",
+    url: "https://esferasesnaviso.com.mx/",
+    image: "./img/esferas_esnaviso__project_img.jpg",
+    description: "Online store for glass spheres and decorative ornaments, developed with WordPress, WooCommerce, Elementor, and custom code. Built based on a client-provided mockup, ensuring a visually appealing and user-friendly design that showcases the unique products.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png", "./img/Premium addons-logo.png", "./img/acf-logo.png"]
+  },
+  {
+    title: "Blog Ponto Icarus",
+    url: "https://blog.pontoicarus.com.br/",
+    image: "./img/blog_ponto_icarus_project_img.jpg",
+    description: "Custom blog for a human resources company in Brazil, developed with WordPress and Elementor. Fully tailored to the client’s specifications, focusing on clean design, readability, and an intuitive user experience.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png", "./img/Premium addons-logo.png", "./img/acf-logo.png"]
+  },
+  {
+    title: "Vrim Connect",
+    url: "https://vrimconnect.com/home/",
+    image: "./img/VRIM_Connect.png",
+    description: "Dynamic website with WordPress, Elementor, Astra theme. Followed design mockups, enhanced with ACF plugin. Dedication to design and usability.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png", "./img/Premium addons-logo.png", "./img/acf-logo.png"]
+  },
+  {
+    title: "Vrim Blog",
+    url: "https://www.vrim.com.mx/blog-vrim/",
+    image: "./img/vrim_blog_project_img.jpg",
+    description: "Health and wellness blog built with WordPress and Elementor, customized according to the client's requirements. Features personalized design elements and numerous adjustments to enhance user engagement, readability, and overall user experience.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png", "./img/Premium addons-logo.png", "./img/acf-logo.png"]
+  },
+  {
+    title: "Koi ecommerce",
+    url: "https://koicbd.com.mx/tienda/",
+    image: "./img/Koi_page.png",
+    description: "Built a sleek e-commerce site with Elementor Pro, WooCommerce, and ACF for a seamless shopping experience.",
+    icons: ["./img/wordpress-logo.png", "./img/elementor-logo.png", "./img/crocoblock-logo.webp", "./img/acf-logo.png"]
+  },
+  {
+    title: "Pokemon Game",
+    url: "https://ricardovillafranco.github.io/pokemon-game/",
+    image: "./img/Pokemon_page.png",
+    description: "Developed a Pokémon battle game using HTML, CSS, and JavaScript with unique abilities and effects.",
+    icons: ["./img/javascript.svg", "./img/css3.png", "./img/html.png"]
+  }
+];
+
+
+// const container = document.getElementById("projects-container");
+
+// projects.forEach((project) => {
+//   const projectHTML = `
+//     <div class="project-container">
+//       <a href="${project.url}" class="project">
+//         <h4 class="project-title">${project.title}</h4>
+//         <img class="project-window" src="${project.image}" alt="${project.title} Image">
+//       </a>
+//       <span class="project-description">${project.description}</span>
+//       <div class="project-icons">
+//         ${project.icons
+//           .map(
+//             (icon) => `
+//             <div class="project-icon-container">
+//               <img class="profile-icons-item" src="${icon}" alt="Icon">
+//             </div>`
+//           )
+//           .join("")}
+//       </div>
+//     </div>
+//   `;
+//   container.innerHTML += projectHTML;
+// });
+ const container = document.getElementById("projects-container");
+ projects.forEach((project)=> {
+  const projectHTML = `
+  <div class="project-container">
+  <a href="${project.url}" class="project">
+  <h4 class="project-title">${project.title}</h4>
+  <img class="project-window" src="${project.image}" alt="${project.title}">
+  </a>
+  <span class="project-description">${project.description}</span>
+  <div class="project-icons">
+  ${project.icons.map((icon)=> `<div class="project-icon-container">
+    <img class="profile-icons-item" src="${icon}" alt="Icon">
+    </div>`).join("")}
+    </div>
+    </div>
+  `;
+  container.innerHTML+= projectHTML
+ });
 
 
 
