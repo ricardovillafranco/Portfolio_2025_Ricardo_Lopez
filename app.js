@@ -222,7 +222,7 @@ const projects = [
  projects.forEach((project)=> {
   const projectHTML = `
   <div class="project-container">
-  <a href="${project.url}" class="project">
+  <a href="${project.url}" target="_blank" class="project">
   <h4 class="project-title">${project.title}</h4>
   <img class="project-window" src="${project.image}" alt="${project.title}">
   </a>
